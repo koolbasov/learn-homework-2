@@ -11,6 +11,7 @@
 5. Сохраните результат в файл referat2.txt
 """
 
+
 def main():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
@@ -24,6 +25,7 @@ def main():
         text = text.replace('.', '!')
     with open("referat2.txt", "w", encoding="utf-8") as file2:
         file2.write(text)
+
 
 if __name__ == "__main__":
     main()

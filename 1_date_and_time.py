@@ -9,6 +9,7 @@
 """
 from datetime import datetime, timedelta
 
+
 def print_days():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
@@ -30,6 +31,7 @@ def str_2_datetime(date_string):
     В ней надо заменить pass на ваш код
     """
     return datetime.strptime(date_string, '%m/%d/%y %H:%M:%S.%f')
+
 
 if __name__ == "__main__":
     print_days()
