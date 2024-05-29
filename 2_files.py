@@ -21,7 +21,7 @@ def main():
         text = file.read()
         print(f"Длина получившейся строки: {len(text)}")
         print(f"Количество слов в тексте: "
-              f"{len(text.replace('\n', ' ').split(' '))}")
+              f"{len(''.join(text.splitlines()).split(' '))}")
         text = text.replace('.', '!')
     with open("referat2.txt", "w", encoding="utf-8") as file2:
         file2.write(text)
